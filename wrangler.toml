@@ -1,0 +1,19 @@
+name = "tieba-backup"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "none"
+run_worker_first = ["/api/*", "/download/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tieba-backup-db"
+database_id = ""
+migrations_dir = "./migrations"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "tieba-backup-files"

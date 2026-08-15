@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+dist/
+.dev.vars
+.env
+.env.local
+__pycache__/
+*.pyc
+scraped_data/
+*.db
+*.log
+tieba_auth.json
